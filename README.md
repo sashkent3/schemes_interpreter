@@ -1,4 +1,8 @@
 # schemes_interpreter
-я ульяна и не понимаю как это работает
-совсем не понимаю
-print('hello mir, ya kak mitya')
+
+Yliana = ['пицца', 'бурек', 'суши']
+for i in Yliana:
+    print('Я,', i)
+    print('меня  съела Уля')
+    
+лол
