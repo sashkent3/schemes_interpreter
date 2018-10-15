@@ -6,3 +6,4 @@ for i in Yliana:
     print('меня  съела Уля')
     
 лол
+ахах
