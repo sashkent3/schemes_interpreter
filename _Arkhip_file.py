@@ -41,6 +41,12 @@ def multiply_operation(input_list):
             raise SyntaxError('')
     return input_list[len(input_list) - 1]
 
+def organisation(input_list):
+    for index in range(1, len(input_list) - 3, 2):
+        if input_list[index] == '+':
+            organisation()
+        elif input_list[index] == '-':
+#             слева направо
 
 s = str(input())
 s = s.split(' ')
