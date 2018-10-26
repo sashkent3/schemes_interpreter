@@ -30,16 +30,18 @@ def multiply_operation(input_list):
 
 
 def organisation(input_list):
-    # print(input_list, len(input_list), 'organisation')
+    # знак первого числа (если ввод через пробел)
     if input_list[0] == '+':
         input_list = input_list[1:]
     elif input_list[0] == '-':
         input_list[1] = '-' + input_list[1]
         input_list = input_list[1:]
 
+    # отсутствие арифметичекских операций
     if len(input_list) == 1:
         return int(input_list[0])
 
+    # сложение и вычитание двух кусков
     for index in range(len(input_list) - 2, 0, - 2):
         # print(index, input_list[index])
         # слева направо
@@ -48,6 +50,7 @@ def organisation(input_list):
         elif input_list[index] == '-':
             return - organisation(input_list[index + 1:]) + organisation(input_list[:index])
 
+    # произведение, дробь, целая часть и остаток
     return multiply_operation(input_list)
 
 
